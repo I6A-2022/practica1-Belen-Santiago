@@ -1,120 +1,67 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Etiqueta que abre -->
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Belén</title>
-    <style> 
-        #idsamanta{
-            color: brown;
-        }
-        .idzagitl{
-            color: cadetblue;
-        }
-        body{
-            background-color:white;
-        }
-        ul li{s
-            color: violet;
-        }
-        ol li{
-            color: yellowgreen;
-        }
-
-        ul li h2 {
-            color: yellowgreen;
-        }
-
-        #idcss {
-            color: blue;
-        }
-
-        .p {
-            color: burlywood;
-        }
-
-        /* COMENTARIO EN CSS*/
-        table, th, td {
-             border: 2px solid violet;
-             border-collapse: collapse;
-             border-style: dashed;
-        }
-    </style> 
+    <title>Practica 1 - Tema 1 - Belén Santiago</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>ITVO</h1>
-    <p>
-        <strong>
-        Bienvenido a mi pagina
-        </strong>
-    </p>
-    <strong>
-        <ul> <!-- <ol> unsorted list, lista desordenada-->
-            <li>Kevin</li>
-            <li>Katia</li>
-            <li>Agustin</li>
-            <li>Esther</li>
-            <li id="idsamanta">Belen</li>
-            <li id="idsamanta">Samanta</li>
-            <li class="idzagitl">Zagitl</li>
-        </ul>
+   <div id="contenedor">
+       <header>
+           <h1>BIENVENIDO A MI PAGINA</h1>
+       </header>
 
-        <ol>
-            <li>MILANESA</li>
-            <li>COLORADITO</li>
-            <li>ALITAS</li>
-            <li>CALDO DE RES</li>
-            <li>ENSALADA DE CAMARONES</li>
-            <li>CEVICHE</li>            
-        </ol>
-    </strong>
-
-    <h1>BIENVENIDO AL EJERCICIO</h1>
-    <p>  
-        En este ejercicio aprenderas CSS  
-    </p>
-
-    <ul>
-        <li>
-            <h2>Tema 1</h2>
-            <p class="p">INTRODUCCIÓN A HTML Y CSS</p>
-        </li>
-        <li>
-            <h2>Tema 2</h2>
-            <p class="p">INTRODUCCIÓN <strong id="idcss">CSS</strong></p>
-        </li>
-        <li>
-            <h3>Tema 3</h3>
-            <p class="p">INTRODUCCIÓN JS</p>
-        </li>
-    </ul>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <table style="float: center;">
-        <tr>
-          <th>Nombre</th>
-          <th>CURP</th>
-          <th>Teléfono</th>
-        </tr>
-        <tr>
-          <td>Belén Guadalupe Santiago Martínez</td>
-          <td>SAMB011212MOCRNLA3</td>
-          <td>9512296644</td>
-        </tr>
        
-      </table>
-      <form>
-        <input type="text">
-        <input type="password">
-        <input type="radio">
-        <input type="checkbox">
-        <input type="color">
-        <input type="email">
-        <input type="number">
-      </form>
+       <nav>
+           <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a target="_blank" href="https://github.com/BelenSantiagoM">Mi perfil de GitHub</a></li>
+               <li><a href="https://www.google.com/">Acerca de</a></li>
+               <li><a href="https://www.instagram.com/">Compartir</a></li>
+           </ul>
+       </nav>
+    
+      <div class="componerSalto"></div>
+
+       <section id="contenido"> 
+            
+           <article>
+               <h2>Tema 1</h2>
+               <p>Introducción</p>
+           </article>
+
+           <article>
+               <h2>Tema 2</h2>
+               <p>Descripción del tema 2</p>
+           </article>
+
+           <article>
+               <h2>Tema 3</h2>
+               <p>Descripción del tema 3</p>
+           </article>
+
+           <article>
+               <h2>Tema 4</h2>
+               <p>Descripción del tema 4</p>
+           </article>
+
+       </section>
+
+       <aside>
+           <h2> Barra lateral</h2>
+           <form>
+               <input type="search">
+               <input value="Buscar" type="button">
+           </form>
+       </aside>
+
+       <div class="componerSalto"></div>
+       <footer>
+           Belén Guadalupe Santiago Martinez &copy; 2022👸💓
+       </footer>
+
+   </div> 
 </body>
-</html> <!-- Etiqueta que cierrra -->
+</html>
